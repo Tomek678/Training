@@ -1,10 +1,21 @@
 var text = document.querySelector('textarea')
-var button = document.querySelector('button')
 var content = document.querySelector('.content')
-var teleport = document.querySelector('.teleport')
+var button = document.querySelector('button')
+var div = document.createElement( 'DIV')
+
+
 button.addEventListener( 'click', function(){
-	console.log( text.value )
-	content.style.display = 'none';
-	teleport.style.display = 'block';
-	teleport.innerHTML = text.value
+	content.style.display = 'none'
+	div.setAttribute('id', 'teleport')
+	div.innerText = text.value
+	document.body.appendChild( div )
+	setTimeout( function () {
+
+		content.style.display = 'flex'
+		div.removeAttribute('id')
+		document.body.removeChild( div )
+
+
+	}, 5000 )
+
 })

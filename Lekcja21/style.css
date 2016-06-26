@@ -1,14 +1,49 @@
 body{
-	margin: 0;
+	margin: 0 auto;
+	background-color: #f4f4f6;
+	color: white;
+	height: 800px;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.content > div {
+	margin-top: 50px;
+	margin-bottom: 15px;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: black;
+}
+textarea{
+	display: block;
+	width: 400px;
+	height: 300px;
+	margin-bottom: 15px;
+	padding: 20px;
 }
 
-textarea{
-	width: 300px;
-}
-.teleport{
-	display: none;
-	background-color: #746c6c;
-	width: 100vw;
-	height: 100vh;
+button {
+	padding:  10px 20px;
+	background-color: black;
 	color: white;
+	border: hidden;
+	font-size: 20px;
+}
+
+#teleport{
+	background-color: rgb(9, 9, 25);
+	color: white;
+	animation: move 5s;
+	height: 100%;
+	padding-left: 40px;
+	font-size: 50px;
+}
+
+@keyframes move {
+	0% { padding-top: 400px; }
+	100% { padding-top: -20px; }
 }
