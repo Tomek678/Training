@@ -1,0 +1,14 @@
+body{
+	margin: 0;
+}
+
+textarea{
+	width: 300px;
+}
+.teleport{
+	display: none;
+	background-color: #746c6c;
+	width: 100vw;
+	height: 100vh;
+	color: white;
+}
