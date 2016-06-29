@@ -1,0 +1,41 @@
+body {
+    background-color: #f3b34e;
+    margin: 90px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+button{
+    border: hidden;
+    background-color: dodgerblue;
+    padding: 12px 15px;
+    font-size: 18px;
+}
+
+.gameOver{
+    display: none;
+}
+.win{
+    display: none;
+}
+/*lvl1*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#start{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+}
+#meta{
+    background-color: blue;
+     width: 40px;
+     height: 40px;
+ }
+#line{
+    background-color: white;
+    height: 40px;
+    width: 400px;
+}
