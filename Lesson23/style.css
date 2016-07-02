@@ -1,3 +1,31 @@
 body{
+    margin: 130px auto;
     font-family: "Digital-7";
+    font-size: 225px;
+
+}
+.time{
+    font-family: Test;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: darkorange;
+    border: hidden;
+    margin:10px;
+    padding:15px 30px;
+    font-size: 20px;
+}
+
+@font-face{
+    font-family: Test;
+    src: url(DS-DIGI.TTF)
 }
